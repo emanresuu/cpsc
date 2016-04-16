@@ -1,0 +1,55 @@
+1) What is an operator?	
+
+An operator is a construct that combines values to produce a value of the same or different type. 
+
+2) What does the term "operator precedence" mean? 
+
+Operator precedence is where a set of rules determines the order in which operations occur; operations that have higher precedence occur earlier.
+
+3) Which of the two operators have higher preceden, "<" or "="?
+
+"<" has a higher order of precedence. "<" has a precedence of 11, whereas "=" has an order of precedence of 3.
+
+4) What does the "=" operator do.
+
+The "=" operator assigns the value of its right operand to its left operand.
+
+5) What happends when you compare a string to a number?
+
+If you compare a string to a number using a strict equality operator, or a relational operator, the output will be "false". 
+
+If you compare a string to a number using a type-converting comparison, the string will be first converted to a number then the left and right operands will be checked to see if they are the same. If the left and right operands are the same, the output will be "true".
+
+6) What is the difference between "==" and "==="?
+
+"==" converts its operands to the same type, if necessary, before checking that they are the same. "===" checks that its operands are the same without first converting them to the same type. 
+
+7) What is wrong with the following expression?
+"Rapini" * "Futon" - "Lego"
+If you typed the expression into a web console, what is the value of the expression? Why do you get this answer. 
+
+The "*" between the two strings is what is wrong with this expression. If I were to type this expression into a web console, the output would be NaN. This is because the "*" is an operator that must have two numerical operands and neither "Rapini" nor "Futon" are numerical. 
+
+8) Given following HTML below, write JavaScript to	
+  	1) Change the heading to "Answer"	
+    2) Fill in the correct answer	
+<!DOCTYPE html>
+<head>
+   <title>In class HTML example</title>
+   <meta charset="UTF-8">
+   <script src="Q8.js" defer></script>
+</head>
+<body>
+   <div id = "question">What is the sum of 5 and 6</div>
+   <div id = "answer"></div>
+</body
+
+document.getElementById("answer").innerHTML = "<h4> Answer </h4> 11";
+
+9) What does the getElementById method do?
+
+The getElementById method retreives the contents of the first element in an html document that has the specified id.
+
+10) What is the difference between how you can use a method vs a property?
+
+Methods can be used to perform an action; properties cannot. Properties have a value; methods only have a value after they have performed an action.

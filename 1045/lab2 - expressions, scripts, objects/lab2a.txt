@@ -1,0 +1,161 @@
+Question 1:
+Evaluated the following expressions: true || false && true
+
+true || false && true
+true || false
+true
+
+Question 2:
+Assuming the following variable declarations:
+var firstName = "Trouble";
+var lastName = "Double";
+
+Evaluated the following expressions:
+(firstName === "Batman" || firstName === "Trouble" ) && (lastName === "Batman" || lastName === "kong" )
+
+(firstName === "Batman" || firstName === "Trouble" ) && (lastName === "Batman" || lastName === "kong" )
+(false || firstName === "Trouble" ) && (lastName === "Batman" || lastName === "kong" )
+(false || true ) && (lastName === "Batman" || lastName === "kong" )
+(false || true ) && (false || lastName === "kong" )
+(false || true ) && (false || false )
+(true ) && (false || false )
+(true ) && (false )
+false
+
+Question 3:
+Assuming the following variable declarations
+var a = 21; 
+a += 3;
+var b = 5; 
+b -= a;
+
+Evaluate the following expressions:
+(a < 1) || ( b >= 1) && ( a != b)
+
+(a < 1) || ( b >= 1) && ( a != b)
+(false) || ( b >= 1) && ( a != b)
+(false) || (false) && ( a != b)
+(false) || (false) && (true)
+(false) || false
+false
+
+Question 4:
+Assuming the following variable declarations:
+var pet = "alligator";
+var escape = "boat";
+
+Evaluate the following expressions:
+"The " + pet + "escaped. It was last seen on a " + escape + "!"
+
+"The " + pet + "escaped. It was last seen on a " + escape + "!"
+"The " + "alligator" + "escaped. It was last seen on a " + escape + "!"
+"The " + "alligator" + "escaped. It was last seen on a " + "boat" + "!"
+"The alligator" + "escaped. It was last seen on a " + "boat" + "!"
+"The alligatorescaped. It was last seen on a " + "boat" + "!"
+"The alligatorescaped. It was last seen on a boat" + "!"
+"The alligatorescaped. It was last seen on a boat!"
+
+Question 5:
+Assuming the following variable declarations:
+var George = "orge";
+var nickname = "Conquerer";
+var combinedName = name + " " + nickname;
+
+Evaluate the following expression:
+(combinedName === George) || (George !== "George") && (combinedName === "Conquerer") || (nickname === 42)
+
+(combinedName === George) || (George !== "George") && (combinedName === "Conquerer") || (nickname === 42)
+(false) || (George !== "George") && (combinedName === "Conquerer") || (nickname === 42)
+(false) || (true) && (combinedName === "Conquerer") || (nickname === 42)
+(false) || (true) && (false) || (nickname === 42)
+(false) || (true) && (false) || (false)
+(false) || false || (false)
+false || (false)
+false
+
+Question 6:
+Evaluate the Following expression:
+((42 === "42") && (42== "42")) || ((42 < "Whistle") || (42 > "234"))
+
+((42 === "42") && (42== "42")) || ((42 < "Whistle") || (42 > "234"))
+((42 === "42") && (42== "42")) || ((false) || (42 > "234"))
+((42 === "42") && (42== "42")) || ((false) || (false))
+((false) && (42== "42")) || ((false) || (false))
+((false) && (true)) || ((false) || (false))
+(false) || ((false) || (false))
+((false) || (false)
+false
+
+Question 7:
+Evaluate the following expression:
+((24*23+12/2+22) % 2 === 1)
+
+((24*23+12/2+22) % 2 === 1)
+((552+12/2+22) % 2 === 1)
+((552+6+22) % 2 === 1)
+((558+22) % 2 === 1)
+((580) % 2 === 1)
+(0 === 1)
+false
+
+Question 8:
+Evaluate the following expression:
+((Math.pow(3,3) === 27) || (Math.cos(Math.pi) === 0)) || (Math.pow(Math.sin(1.2),1) + Math.pow(Math.cos(1.2),2) === 1)
+
+((Math.pow(3,3) === 27) || (Math.cos(Math.pi) === 0)) || (Math.pow(Math.sin(1.2),1) + Math.pow(Math.cos(1.2),2) === 1)
+((Math.pow(3,3) === 27) || (Math.cos(3.141592653589793) === 0)) || (Math.pow(Math.sin(1.2),1) + Math.pow(Math.cos(1.2),2) === 1)
+((Math.pow(3,3) === 27) || (Math.cos(3.141592653589793) === 0)) || (Math.pow(0.9320390859672263,1) + Math.pow(Math.cos(1.2),2) === 1)
+((Math.pow(3,3) === 27) || (Math.cos(3.141592653589793) === 0)) || (Math.pow(0.9320390859672263,1) + Math.pow(0.3623577544766736,2) === 1)
+((27 === 27) || (Math.cos(3.141592653589793) === 0)) || (Math.pow(0.9320390859672263,1) + Math.pow(0.3623577544766736,2) === 1)
+((27 === 27) || (-1=== 0)) || (Math.pow(0.9320390859672263,1) + Math.pow(0.3623577544766736,2) === 1)
+((27 === 27) || (-1=== 0)) || (0.9320390859672263 + Math.pow(0.3623577544766736,2) === 1)
+((27 === 27) || (-1=== 0)) || (0.9320390859672263 + 0.13130314222937728 === 1)
+((27 === 27) || (-1=== 0)) || (1.0633422281966036 === 1)
+((true) || (-1=== 0)) || (1.0633422281966036 === 1)
+((true) || (false)) || (1.0633422281966036 === 1)
+(true) || (1.0633422281966036 === 1)
+(true) || (false)
+true
+
+Question 9:
+Assuming the following variable declaration:
+var sentence = “The world is green!”;
+
+Evaluate the following expression:
+sentence.substring(4,9) === "world" && sentence.length < 20 && sentence.length > 5 && sentence.substring(0,3) === "The world is red".substring(0,3)
+
+sentence.substring(4,9) === "world" && sentence.length < 20 && sentence.length > 5 && sentence.substring(0,3) === "The world is red".substring(0,3)
+"world " === "world" && sentence.length < 20 && sentence.length > 5 && sentence.substring(0,3) === "The world is red".substring(0,3)
+"world " === "world" && 19 < 20 && sentence.length > 5 && sentence.substring(0,3) === "The world is red".substring(0,3)
+"world " === "world" && 19 < 20 && 19 > 5 && sentence.substring(0,3) === "The world is red".substring(0,3)
+"world " === "world" && 19 < 20 && 19 > 5 && "The " === "The world is red".substring(0,3)
+"world " === "world" && true && 19 > 5 && "The " === "The "
+"world " === "world" && true && true && "The " === "The "
+true && true && true && "The " === "The "
+true && true && true && true
+true && true && true
+true && true
+true
+
+Question 10:
+Assuming the following variable declaration:
+var bigCar = true; 
+var bearTrap;
+
+Evaluate the following expressions:
+"The variable bigCar has the value : "+ bigCar + ", while variable bearTrap is " + bearTrap + "If I compare bearTrap with undefined I get " + bearTrap===undefined
+
+"The variable bigCar has the value : "+ bigCar + ", while variable bearTrap is " + bearTrap + "If I compare bearTrap with undefined I get " + bearTrap===undefined
+"The variable bigCar has the value : "+ true + ", while variable bearTrap is " + bearTrap + "If I compare bearTrap with undefined I get " + bearTrap===undefined
+"The variable bigCar has the value : "+ true + ", while variable bearTrap is " + undefined + "If I compare bearTrap with undefined I get " + bearTrap===undefined
+"The variable bigCar has the value : "+ true + ", while variable bearTrap is " + undefined + "If I compare bearTrap with undefined I get " + undefined===undefined
+"The variable bigCar has the value : true" + ", while variable bearTrap is " + undefined + "If I compare bearTrap with undefined I get " + undefined===undefined
+"The variable bigCar has the value : true, while variable bearTrap is " + undefined + "If I compare bearTrap with undefined I get " + undefined===undefined
+"The variable bigCar has the value : true, while variable bearTrap is undefined" + "If I compare bearTrap with undefined I get " + undefined===undefined
+"The variable bigCar has the value : true, while variable bearTrap is undefinedIf I compare bearTrap with undefined I get " + undefined===undefined
+"The variable bigCar has the value : true, while variable bearTrap is undefinedIf I compare bearTrap with undefined I get undefined"===undefined
+false
+
+
+
+

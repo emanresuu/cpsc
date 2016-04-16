@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Final Exam</title>
+   <meta charset="UTF-8">
+   <script src="finalexam.js" defer></script>
+</head>
+
+<body onload="setup()">
+
+   <h1>Light bulb puzzle</h1>
+
+   <input type="button" value="button1" onclick="lightOneAndFour()">
+   <input type="button" value="button2" onclick="reverseLightOneAndTwo()">
+   <input type="button" value="button3" onclick="reverseLightTwoAndThree()">
+   <br>
+
+   <canvas id="canvas" 
+      width="450" 
+      height="200"
+      style="border-style: solid">
+   </canvas>
+
+   <br>
+   <input type="button" value="reset" onclick="reset()">
+   <br>
+   <p id="youWinMessage"></p>
+   <p id="move1"></p>
+   <p id="move2"></p>
+   <p id="move3"></p>
+   <p id="move4"></p>
+
+</body>
+
+</html>
+

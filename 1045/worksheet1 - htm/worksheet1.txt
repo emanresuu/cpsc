@@ -1,0 +1,67 @@
+1)Write an HTML page that contains a list all the months of the year with 31 days. Give your page an appropriate title and heading.
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> All the Months that have 31 Days </title>
+   <meta charset="UTF-8">
+</head>
+<body>
+   <h1>All the Months that have 31 Days</h1>
+   January, March, May, July, August, October, December 
+</body>
+</html>
+
+
+2)What is a <div> tag?
+
+A <div> tag is used to bunch content together and modify stuff in the bunch all at once. 
+
+
+3)What is a <h1> tag?
+
+An <h1> tag defines an element whose text will be displayed in the style associated with the tag <h1> (heading 1). 
+
+
+4)Why do you need to include the <meta charset="UTF‐8">
+
+If I don't define the character set in a html document, using a tag like <meta charset="UTF-8">, the character set used to display the webpage will be determined by each user's browser. Since not all browser's default to the same character set, the website will may appear different, and potentially bad, depending on which browser it is viewed from. I could avoid this by testing my html document using every character set, but this would be much more work than specifying the encoding by including something like <meta charset="UTF‐8">. 
+
+
+5)The following HTML contain errors. Fix the errors:
+<DOCTYPE html>
+<html>
+<head>
+   <title> Worksheet Example </title>
+   <meta charset="UTF-8">
+</head>
+<body>
+     <h1> Worksheet 1 <h1>
+     <article class="intro">
+          <p>Let me enter some text here. It will be something really odd for people to see.
+     </article>
+     <div class="prologue">
+          We can let CSS style this one.
+          <h> Yup CSS!</h1>
+     </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Worksheet Example </title>
+   <meta charset="UTF-8">
+</head>
+<body>
+     <article class="intro">
+         <h2> Worksheet 1 </h2>
+         <p>Let me enter some text here. It will be something really odd for people to see.</p>
+     </article>
+     <div class="prologue">
+          We can let CSS style this one.
+          <h1> Yup CSS!</h1>
+     </div>
+</body>
+</html>
+

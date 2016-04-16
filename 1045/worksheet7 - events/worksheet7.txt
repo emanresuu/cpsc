@@ -1,0 +1,76 @@
+1) What is an event on an HTML page. 
+
+An event on an HTML page is any user action that the page could 
+respond to.
+
+2) On which HTML tag do we place the onload attribute?
+
+We place the onload attribute in the body tag.
+
+3) How do you add an event handler to a button? What is one of the 
+attributes you can use?
+
+I add an event handler to a button by adding a DOM event attribute 
+to an input tag.
+
+One of the attributes that I can use is onclick.
+
+4) When writing event driven programs, all your code should be in 
+functions. How do these functions share information with each other?
+
+In an event driven program, where all code should be in functions, 
+functions share information with each other by way of global variables.
+
+5) In the example below, what is displayed inside the button and what 
+happens when the button is pressed? Why does count need to be a global 
+variable?
+
+In the example, button1 is displayed inside the button.
+
+The first time that the button is pressed the function 'buttonHandler' 
+displays 'You pressed the button 1 times." Each subsequent time the 
+button is pressed the number in the message increases by 1.  
+
+The variable 'count' needs to be a global variable because its value 
+needs to be preserved after 'buttonHandler' has finished running.  
+
+6) Write a simple web-app, that has a button, input text field on the 
+page and output div. When the user clicks the button, put the reverse 
+of whatever the user has in the input text field into the output div. 
+
+
+switcher.html
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Switcher</title>
+   <meta charset = "UTF-8">
+   <script src = "switcher.js" defer></script>
+</head>
+<body>
+   <input type = "text" id = "txt">
+   <br>
+   <input type = "button" id = "but" value = "switcheroo" onclick = "switcher()">
+   <div id = "out"></div>
+</body>
+</html>
+
+
+switcher.js
+
+function switcher() {
+   "use strict";
+   var string = document.getElementById("txt").value;
+   var stringLength = string.length;
+   var i;
+   var stringBuilder = "";
+   for (i = 0; i < stringLength; i = i + 1) {
+      stringBuilder = string.substring(i , i + 1) + stringBuilder; 
+   }
+   var output = document.getElementById("out");
+   output.innerHTML = stringBuilder;
+}
+
+
+

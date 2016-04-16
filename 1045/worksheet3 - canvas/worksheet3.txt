@@ -1,0 +1,43 @@
+1) What is a drawing context and how do we obtain it?
+
+A drawing context is a place that converts written commands 
+to images.
+
+getContext()
+
+2) What tag is used to add a canvas to the HTML page?
+
+The canvas tag should be used to add a canvas to teh HTML page. Here is an example of this tag:
+
+<canvas id = "abc" 
+   width = "123" 
+   height = "123" 
+   style = "border : solid">
+</canvas>
+
+3) What is the purpose of the id attribute in the canvas tag?
+
+The id attribute in the canvas tag allows us to refer to the canvas using javaScript. 
+
+4) Which command do you use to draw the path?
+
+stroke()
+
+5) What shape would the following code snippet draw? Where is it drawn?
+
+This snippet would draw a house with a black roof; black walls; a black, secret door; and a blue window.
+
+It is drawn just outside of the canvas on the right, alas.
+
+6) What shape does the following code draw and where on the canvas does it draw it?
+
+The code draws a heart that has been rotated to the right by 90 degrees. 
+
+It is drawn roughly to the middle right of the canvas.
+
+7) Find the error in the following page. 
+
+The errors is that the html document is missing <script src="fig.js" defer></script> in the head element. 
+
+
+

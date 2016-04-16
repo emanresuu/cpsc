@@ -1,0 +1,33 @@
+1. What does it mean by calling/invoking a function?
+
+Calling/invoking a function is where the interpreter executes a previously defined function. (Haverbeke, page 42)
+
+2. What is a parameter and why are they used?
+
+A parameter is a variable associated with a function; it can be given a value when a function is invoked; it is local to the function with which it is invoked. (Haverbeke, page 43)
+
+Parameters are used to avoid the messy business of verifying that global variables are both defined and have the desired values for each function invocation.
+
+3. What is a return value and how is it related to expression evaluation?
+
+A return value is what is produced by invoking a function. It can be of any JavaScript data type resulting from the evaluation of an expression (expression evaluation).
+
+4. What are the values of the following 2 expressions?
+
+doubleTriple(40); //-> 120
+doubleTriple(doubleTriple(40)); //-> 240
+
+5. What does the above code draw and where does it draw it?
+
+The above code draws a star on canvas ctx with an orgin at x, y and N equally radiating rays. The rays are of alternating lengths r1 and r2. Note that ctx, x, y, N, r1, and r2 are perameters to be specified when invoking the function named drawSomething. 
+
+6. What is the value of each of the following expressions?
+
+a(10); //-> 39
+b(10); //-> 38
+c(10); //-> 31
+
+Works Cited
+
+Haverbeke, M., & Ebrary Academic Complete (Canada) Subscription Collection. (2015). Eloquent javascript: a modern introduction to programming (Second edition.). San Francisco: No Starch Press. Retrieved from http://GW2JH3XR2C.search.serialssolutions.com/?sid=sersol&SS_jc=TC0001453212&title=Eloquent%20JavaScript%3A%20A%20Modern%20Introduction%20to%20Programming
+
